@@ -23,5 +23,10 @@ PATCH - update existing data
 DELETE - delete data
 
 Use environment variable to store API keys
+
+To temporarily set EV:
 set ENV_VARIABLE_NAME=12345678
 to view: echo %ENV_VARIABLE_NAME%
+Can set in PyCharm under Edit Configurations
+Can permanently set under environment variable computer settings
+

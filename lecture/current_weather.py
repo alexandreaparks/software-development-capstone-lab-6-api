@@ -9,9 +9,9 @@ print(key)
 url = 'https://api.openweathermap.org/data/2.5/weather'  # removed everything after ? for query params
 
 city = input('Enter city: ')
-state = input('Enter the 2-letter abbreviated state name: ')
+country = input('Enter the 2-letter country code: ')
 
-location = f'{city},{state},us'
+location = f'{city},{country}'
 
 query = {'q': location, 'units': 'imperial', 'appid': key}
 
