@@ -1,0 +1,30 @@
+2024-02-14 12:51:02,738 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.openweathermap.org:80
+2024-02-14 12:51:02,836 - urllib3.connectionpool - DEBUG - http://api.openweathermap.org:80 "GET /data/2.5/forecast?q=miami%2Cfl&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77 HTTP/1.1" 404 40
+2024-02-14 12:51:09,661 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.openweathermap.org:80
+2024-02-14 12:51:09,756 - urllib3.connectionpool - DEBUG - http://api.openweathermap.org:80 "GET /data/2.5/forecast?q=miami%2Cus&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77 HTTP/1.1" 200 16143
+2024-02-14 12:54:44,377 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.openweathermap.org:80
+2024-02-14 12:54:44,478 - urllib3.connectionpool - DEBUG - http://api.openweathermap.org:80 "GET /data/2.5/forecast?q=minneapolis%2Cus&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77 HTTP/1.1" 200 15891
+2024-02-14 13:10:32,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.openweathermap.org:80
+2024-02-14 13:10:32,338 - urllib3.connectionpool - DEBUG - http://api.openweathermap.org:80 "GET /data/2.5/forecas?q=minneapolis%2Cus&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77 HTTP/1.1" 404 40
+2024-02-14 13:10:32,340 - root - ERROR - Error requesting URL http://api.openweathermap.org/data/2.5/forecas
+Traceback (most recent call last):
+  File "C:\Users\alexa\OneDrive - MNSCU\ITEC 2905 Software Development Capstone\software-development-capstone-lab-6-api\lab\forecast.py", line 50, in get_weather_data
+    response.raise_for_status()  # raises exception for error
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexa\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://api.openweathermap.org/data/2.5/forecas?q=minneapolis%2Cus&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77
+2024-02-14 13:11:51,705 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.openweathermap.org:80
+2024-02-14 13:11:51,843 - urllib3.connectionpool - DEBUG - http://api.openweathermap.org:80 "GET /data/2.5/forecast?q=minneapolis%2Cus&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77 HTTP/1.1" 200 15922
+2024-02-14 13:16:05,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.openweathermap.org:80
+2024-02-14 13:16:05,932 - urllib3.connectionpool - DEBUG - http://api.openweathermap.org:80 "GET /data/2.5/forecast?q=minneapolis%2Cus&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77 HTTP/1.1" 200 15922
+2024-02-14 13:16:05,970 - root - ERROR - Error reading JSON data
+Traceback (most recent call last):
+  File "C:\Users\alexa\OneDrive - MNSCU\ITEC 2905 Software Development Capstone\software-development-capstone-lab-6-api\lab\forecast.py", line 70, in get_forecast
+    description = forecast['weathe'][0]['description']  # weather's value is a list - access index 0
+                  ~~~~~~~~^^^^^^^^^^
+KeyError: 'weathe'
+2024-02-14 13:16:47,105 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.openweathermap.org:80
+2024-02-14 13:16:47,189 - urllib3.connectionpool - DEBUG - http://api.openweathermap.org:80 "GET /data/2.5/forecast?q=minneapolis%2Cus&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77 HTTP/1.1" 200 15922
+2024-02-14 13:22:59,082 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.openweathermap.org:80
+2024-02-14 13:22:59,208 - urllib3.connectionpool - DEBUG - http://api.openweathermap.org:80 "GET /data/2.5/forecast?q=minneapolis%2Cus&units=imperial&appid=c6c608df8442595b6b45da2d978a4e77 HTTP/1.1" 200 15921
