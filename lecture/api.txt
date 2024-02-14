@@ -1,0 +1,10 @@
+API - Application Programming Interface
+
+1 - generic term for classes, methods, and functions provided by a program
+or library
+
+2 - service provided by an application that other programs connect to and
+make requests using HTTP, and receive responses to be used in a program
+    - responses are usually in JSON format
+
+

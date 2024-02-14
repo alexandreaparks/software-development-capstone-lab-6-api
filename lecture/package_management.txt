@@ -1,0 +1,39 @@
+PyPI - Python package index - repository of Python packages
+
+pip - Python package installer tool
+
+Virtual environments - useful for managing different dependencies needed
+for different Python projects
+
+setup.py - when distributing project, need a way to describe the project and
+it's dependencies
+
+    - create a setup.py file that will contain info about your package and
+    instructions on which dependencies should be fetched/installed
+
+    - a packaging tool, like setuptools, reads setup.py when package is
+    downloaded and installed, dependencies are fetched and installed
+
+requirements.txt - list of dependencies - used instead of or as well as
+setup.py usually during development
+
+
+pip install <package name>
+
+pip connects to PyPI - locates, downloads, and installs requested packages
+
+Use virtual environments and install specific project dependencies in it
+Allows for each project to run in its own environment with just its own dependencies
+
+Go to directory to create virtual environment in and run commands:
+python -m venv env
+env\Scripts\activate
+
+use deactivate to leave virtual environment
+
+To copy all dependencies into file:
+pip freeze >> requirements.txt
+
+To install required dependencies based off requirements.txt:
+pip install -r requirements.txt
+
