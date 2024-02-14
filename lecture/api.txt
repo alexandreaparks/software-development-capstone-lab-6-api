@@ -7,4 +7,21 @@ or library
 make requests using HTTP, and receive responses to be used in a program
     - responses are usually in JSON format
 
+Connect to systems using HTTP - RESTful APIs
+REST - Representational State Transfer
 
+HTTP - protocol used for browsers to request a resource (like a webpage) at a URL,
+and for servers to send pages, images, and other resources in response
+Can use HTTP to send requests from a program to another computer - then, the other
+computer can respond with data such as a file, text, error message, or JSON
+
+Using 'requests' library
+
+GET - fetch data
+POST - create new data
+PATCH - update existing data
+DELETE - delete data
+
+Use environment variable to store API keys
+set ENV_VARIABLE_NAME=12345678
+to view: echo %ENV_VARIABLE_NAME%
